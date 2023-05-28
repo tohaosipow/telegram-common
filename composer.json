@@ -1,0 +1,20 @@
+{
+    "name": "antonosipov/telegram-common",
+    "type": "library",
+    "require": {
+        "illuminate/contracts": "^10.12",
+        "illuminate/collections": "^10.12",
+        "illuminate/http": "^10.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "Antonosipov\\TelegramCommon\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "antonosipov",
+            "email": "tohaosipow@yandex.ru"
+        }
+    ]
+}
