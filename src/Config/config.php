@@ -1,5 +1,5 @@
 <?php
 
 return [
-  'token' => config('common_telegram.token')
+  'token' => env('TELEGRAM_TOKEN')
 ];
