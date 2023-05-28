@@ -67,13 +67,13 @@ class TelegramService
     }
 
 
-    public function sendMessage($user, string $text, ?InlineReplyMarkup $inlineReplyMarkup = null, ?int $message_id = null, ?string $inline_message_id = null, string $parse_mode = 'HTML', bool $disable_web_page_preview = true, ?string $video = null): object
+    public function sendMessage(int $chat_id, string $text, ?InlineReplyMarkup $inlineReplyMarkup = null, string $parse_mode = 'HTML', bool $disable_web_page_preview = true, ?string $video = null): object
     {
         if ($video) {
             return $this->request('sendVideo', [
                 'caption' => $text,
                 'video' => $video,
-                'chat_id' => $user->telegram_id,
+                'chat_id' => $chat_id,
                 'parse_mode' => $parse_mode,
                 'disable_web_page_preview' => $disable_web_page_preview,
                 'reply_markup' => $inlineReplyMarkup?->toArray(),
@@ -81,7 +81,7 @@ class TelegramService
         }
         return $this->request('sendMessage', [
             'text' => $text,
-            'chat_id' => $user->telegram_id,
+            'chat_id' => $chat_id,
             'parse_mode' => $parse_mode,
             'disable_web_page_preview' => $disable_web_page_preview,
             'reply_markup' => $inlineReplyMarkup?->toArray(),
