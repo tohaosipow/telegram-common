@@ -1,5 +1,22 @@
 # Telegram Common for Laravel
 
+### How to install
+```bash
+   composer require antonosipov/telegram-common
+```
+
+```
+ php artisan vendor:publish --provider="Antonosipov\TelegramCommon\Providers\TelegramCommonServiceProvider"
+```
+
+Add to .env
+```
+  TELEGRAM_TOKEN=<token_here>
+```
+or change env variable in ```config/telegram-common.php```
+
+### Config
+
 You can easy get telegram entities from Request
 
 ```php 
