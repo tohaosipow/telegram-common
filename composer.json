@@ -18,5 +18,12 @@
             "name": "antonosipov",
             "email": "tohaosipow@yandex.ru"
         }
-    ]
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Antonosipov\\TelegramCommon\\Providers\\TelegramCommonServiceProviderr"
+            ]
+        }
+    }
 }
