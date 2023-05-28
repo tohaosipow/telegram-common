@@ -6,7 +6,8 @@
         "illuminate/collections": "^10.12",
         "illuminate/http": "^10.12",
         "guzzlehttp/guzzle": "^7.7",
-        "illuminate/support": "^10.12"
+        "illuminate/support": "^10.12",
+        "illuminate/console": "^10.12"
     },
     "autoload": {
         "psr-4": {

@@ -97,10 +97,10 @@ class TelegramService
         return array_map(fn($el) => $el->toArray(), $array);
     }
 
-    public function setWebhook()
+    public function setWebhook(string $route = '/api/hook')
     {
         return $this->request('setWebhook', [
-            'url' => env('APP_URL') . '/api/hook'
+            'url' => env('APP_URL') . $route
         ]);
     }
 
