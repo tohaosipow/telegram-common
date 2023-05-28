@@ -22,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Antonosipov\\TelegramCommon\\Providers\\TelegramCommonServiceProviderr"
+                "Antonosipov\\TelegramCommon\\Providers\\TelegramCommonServiceProvider"
             ]
         }
     }
