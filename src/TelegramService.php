@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Services;
+namespace Antonosipov\TelegramCommon;
 
 
 
 use Antonosipov\TelegramCommon\InlineQueryResults\InlineQueryResult;
 use Antonosipov\TelegramCommon\Keyboard\InlineReplyMarkup;
-use Antonosipov\TelegramCommon\Message;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;

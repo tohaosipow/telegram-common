@@ -47,7 +47,7 @@ namespace App\Http\Controllers;
 use Antonosipov\TelegramCommon\InlineQuery;
 use Antonosipov\TelegramCommon\InlineQueryResults\InlineQueryResultArticle;
 use Antonosipov\TelegramCommon\InputMessageContent;
-use App\Services\TelegramService;
+use Antonosipov\TelegramCommon\TelegramService;
 use Illuminate\Http\Request;
 
 class TelegramHookController extends Controller
