@@ -126,7 +126,7 @@ class TelegramService
 
   public function getUserProfilePhotos(int $user_id, int $offset = null, int $limit = null): object
   {
-    return $this->request('getUserProfilePhotos', array_values(array_filter(['user_id' => $user_id, 'offset' => $offset, 'limit' => $limit])));
+    return $this->request('getUserProfilePhotos', array_filter(['user_id' => $user_id, 'offset' => $offset, 'limit' => $limit]));
   }
 
   public function getFile(string $file_id): object
