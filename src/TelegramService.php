@@ -123,6 +123,7 @@ class TelegramService
   {
     return $this->request('deleteMessage', ['chat_id' => $message->getChat()->getId(), 'message_id' => $message->getMessageId()]);
   }
+  
 
   public function getUserProfilePhotos(int $user_id, int $offset = null, int $limit = null): object
   {
